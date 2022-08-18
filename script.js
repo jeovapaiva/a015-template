@@ -1,16 +1,22 @@
 
 console.log("Que tipo de usuário está entrando?");
 console.log("Insira\n\nA: Administrador\n\nB: Usuário comum\n\nC Usuário assinante");
-let Acesso = prompt();
+let Acesso = prompt().toUpperCase();
 //let cont = "a"
 
-while(Acesso !== "a"){
-    cont = cont + tipo
+while(Acesso !== "A"){
+    if (Acesso === "B"){
+        console.log("Usuário comum")
+    }else if (Acesso === "C"){
+        console.log("Usuário assinante") 
+    }//else {
+        //console.log("Acesso negado")   
+    //}
     console.log("Acesso negado!")  
-    Acesso= prompt()
-}
+    Acesso = prompt("Insira\n\nA: Administrador\n\nB: Usuário comum\n\nC Usuário assinante").toUpperCase();
+}   
 
-console.log("Bem vido admin!");   
+console.log("Bem vido admin!");    
 
 // let num 
 
